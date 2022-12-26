@@ -1,0 +1,20 @@
+//->RepL--(Read,Eval,print,Loop)
+//Provide Runtime Environment as like the Inspect in chrome
+//Creating file through terminal
+//1-Enter .exit
+//2-type nul > FileName.js
+//File is successfully Created
+
+//Multiline Code
+/*> var x=0;
+undefined
+> do
+... {
+... x++;
+... console.log(x);
+... }while(x<5)
+1
+2
+3
+4
+5*/

@@ -1,0 +1,31 @@
+#include <stdio.h>
+int Swap1(int x,int y){
+    int temp=x;
+    x=y;
+    y=temp;
+    printf("value after swapping in Swap1 function:\na=%d  b=%d\n",x,y);
+
+}
+int Swap(int*x,int*y){
+    int temp = *x;
+    *x=*y;
+    *y=temp;
+} 
+
+int main(){
+    int a,b;
+    printf("Enter two number:\n");
+    scanf("%d %d",&a,&b);
+    printf("call by value:\n");
+    printf("a=%d & b=%d\n",a,b);
+    Swap1(a,b);
+    printf("value after swapping in main:\na=%d  b=%d\n",a,b);
+    printf("\n\ncall by reference:\n");
+    printf("value before swapping in main():\na=%d  b=%d\n",a,b);
+    Swap(&a,&b);
+    printf("value after swaping in swap function:\na=%d  b=%d\n",a,b);
+    printf("Value after swapping in main():\na=%d b=%d",a,b);
+
+
+
+}
